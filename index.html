@@ -10,22 +10,54 @@
 </head>
 <body><!--cuerpo de mi documento-->
   <center>
-    <h1> Hola mundo con Vue.Js </h1> <br>
+    <h1>Primer Formulario</h1> <br>
     <br>
-    <h2> Introducción a: </h2> <br>
-  <ul>
-      <li>HTML</li>
-      <li>CSS3</li>
-      <li>Javascript</li>
-      <li>Vue.js</li>
-      <li>BootStrap</li>
-      <li>PHP</li>
-      <li>Laravel</li>
-      <li>MySQL</li>
-      <li>Modejs</li>
-      <li>MongoDB</li>
-      <li>Socket.io</li>
-  </ul>
    </center> 
+   <form action="" id="frmSaludo" method="POST">
+     <table>
+       <thead>
+         <tr>
+           <td colspan="2">Datos</td>
+         </tr>
+       </thead>
+       <tbody>
+
+         <tr>
+
+           <td>Nombre:</td>
+           <td><input placeholder="Escribe tu Nombre" v-model="saludo" type="text" name="txtsaludo" id="txtsaludo"></td>
+         </tr>
+
+         <tr>
+           <td>Genero:</td>
+           <td>
+            M: <input type="radio" name="optGenero" id="optMasculino">
+            F: <input type="radio" name="optGenero" id="optFemenino">
+           </td>
+         </tr>
+         <tr>
+          <td>Fecha de Nacimiento</td>
+          <td>
+            <input type="date">
+          </td>
+        </tr>
+         <tr>
+           <td>Estado Civil:</td>
+           <td>
+            Soltero: <input type="radio" name="optEstado" id="optSoltero">
+            Casado: <input type="radio" name="optEstado" id="optCaseado">
+            Viudo: <input type="radio" name="optEstado" id="optViudo">
+            Divorsiado: <input type="radio" name="optEstado" id="optDivorsiado">
+            </td>
+          </tr>
+         <tr>
+           <td>Telefono:</td>
+           <td><input placeholder="0000-0000" pattern=[0-9]{4}-[0-9]{4}" type="tel" > </td>
+         </tr>
+       </tbody>
+     </table>
+   </form>
+
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+var appVue = new Vue({
+    
+
+    
+});
